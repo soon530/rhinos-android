@@ -74,7 +74,10 @@ public class PointFragment extends Fragment implements BeaconConsumer {
     public void onBeaconServiceConnect() {
         beaconManager.setRangeNotifier(new RangeNotifier() {
             @Override
-            public void didRangeBeaconsInRegion(Collection<Beacon> collection, Region region) {
+            public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
+                Log.e("vic", "beacons: " + beacons.toString());
+
+                if (beacons.isEmpty()) return;
 
                 if (isNotYetDetectBeacon) {
 
@@ -87,7 +90,7 @@ public class PointFragment extends Fragment implements BeaconConsumer {
                     });
 
                     isNotYetDetectBeacon = false;
-                    Log.e("vic", "didRangeBeaconsInRegion: " + isNotYetDetectBeacon);
+                    Log.e("vic", "isNotYetDetectBeacon: " + isNotYetDetectBeacon);
 
                 }
 
