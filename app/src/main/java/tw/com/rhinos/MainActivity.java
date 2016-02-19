@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity
 
         switch (itemId) {
             case R.id.nav_point:
-                fragment = AwardFragment.newInstance(itemId);
+                fragment = PointFragment.newInstance(itemId);
                 break;
 
             case R.id.nav_award:
@@ -106,26 +106,26 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_store:
-                fragment = AwardFragment.newInstance(itemId);
+                fragment = PointFragment.newInstance(itemId);
                 break;
 
             case R.id.nav_group:
-                fragment = AwardFragment.newInstance(itemId);
+                fragment = PointFragment.newInstance(itemId);
                 showTaost();
                 break;
 
             case R.id.nav_card:
-                fragment = AwardFragment.newInstance(itemId);
+                fragment = PointFragment.newInstance(itemId);
                 showTaost();
                 break;
 
             case R.id.nav_find:
-                fragment = AwardFragment.newInstance(itemId);
+                fragment = PointFragment.newInstance(itemId);
                 showTaost();
                 break;
 
             default: // R.id.nav_home
-                fragment = AwardFragment.newInstance(itemId);
+                fragment = PointFragment.newInstance(itemId);
                 break;
         }
 
