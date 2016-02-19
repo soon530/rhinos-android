@@ -3,34 +3,31 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_point"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="入場積點" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
+            android:id="@+id/nav_award"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="看球抽獎" />
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="犀客商城" />
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="犀客團GO" />
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_card"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="球員Angle卡" />
+
+        <item
+            android:id="@+id/nav_find"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="尋找野生大義/唐基" />
+    </group>
 
 </menu>
