@@ -35,7 +35,7 @@
                 android:layout_gravity="right"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:text="2016/2/19"
+                android:text="2016/2/19 下午4:26:57"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
