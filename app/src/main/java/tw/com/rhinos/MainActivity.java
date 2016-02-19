@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -41,6 +43,10 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, getFragment(R.id.nav_point)).commit();
     }
 
     @Override
@@ -78,35 +84,52 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        switch (id) {
-            case R.id.nav_point:
-                break;
-
-            case R.id.nav_award:
-                break;
-
-            case R.id.nav_store:
-                break;
-
-            case R.id.nav_group:
-                showTaost();
-                break;
-
-            case R.id.nav_card:
-                showTaost();
-                break;
-
-            case R.id.nav_find:
-                showTaost();
-                break;
-        }
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, getFragment(item.getItemId())).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private Fragment getFragment(int itemId) {
+        Fragment fragment;
+
+        switch (itemId) {
+            case R.id.nav_point:
+                fragment = AwardFragment.newInstance(itemId);
+                break;
+
+            case R.id.nav_award:
+                fragment = AwardFragment.newInstance(itemId);
+                break;
+
+            case R.id.nav_store:
+                fragment = AwardFragment.newInstance(itemId);
+                break;
+
+            case R.id.nav_group:
+                fragment = AwardFragment.newInstance(itemId);
+                showTaost();
+                break;
+
+            case R.id.nav_card:
+                fragment = AwardFragment.newInstance(itemId);
+                showTaost();
+                break;
+
+            case R.id.nav_find:
+                fragment = AwardFragment.newInstance(itemId);
+                showTaost();
+                break;
+
+            default: // R.id.nav_home
+                fragment = AwardFragment.newInstance(itemId);
+                break;
+        }
+
+        return fragment;
     }
 
     private void showTaost() {
