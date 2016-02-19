@@ -105,22 +105,22 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_store:
-                fragment = PointFragment.newInstance(itemId);
+                fragment = HomeFragment.newInstance(itemId);
                 break;
 
             case R.id.nav_group:
-                fragment = PointFragment.newInstance(itemId);
-                showTaost();
+                fragment = HomeFragment.newInstance(itemId);
+                // showTaost();
                 break;
 
             case R.id.nav_card:
-                fragment = PointFragment.newInstance(itemId);
-                showTaost();
+                fragment = HomeFragment.newInstance(itemId);
+                // showTaost();
                 break;
 
             case R.id.nav_find:
-                fragment = PointFragment.newInstance(itemId);
-                showTaost();
+                fragment = HomeFragment.newInstance(itemId);
+                // showTaost();
                 break;
 
             default: // R.id.nav_home

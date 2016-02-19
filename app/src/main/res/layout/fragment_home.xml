@@ -4,59 +4,12 @@
     android:layout_height="match_parent"
     tools:context="com.wmtw.clinic.HomeFragment">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="義大犀牛今天又可以贏幾分了呢？"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="40sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="40dp">
-
-            <Button
-                android:id="@+id/guess_big"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@color/colorAccent"
-                android:text="10分以上"
-                android:textColor="@android:color/white"
-                android:textSize="32sp" />
-
-            <Button
-                android:id="@+id/guess_small"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@color/colorAccent"
-                android:text="10分以下"
-                android:textColor="@android:color/white"
-                android:textSize="32sp" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="回答問題後，即可參加抽獎唷~"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="18sp"
-            android:layout_margin="10dp"/>
-
-    </LinearLayout>
+        android:text="正在開發中..."
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"/>
 
 </FrameLayout>

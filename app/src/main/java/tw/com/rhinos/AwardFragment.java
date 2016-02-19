@@ -38,7 +38,7 @@ public class AwardFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_award, container, false);
 
         guessBig = (Button) rootView.findViewById(R.id.guess_big);
         guessSmall = (Button) rootView.findViewById(R.id.guess_small);
