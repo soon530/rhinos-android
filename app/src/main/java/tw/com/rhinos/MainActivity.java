@@ -104,12 +104,12 @@ public class MainActivity extends AppCompatActivity
                 fragment = AwardFragment.newInstance(itemId);
                 break;
 
-            case R.id.nav_store:
-                fragment = HomeFragment.newInstance(itemId);
-                break;
+//            case R.id.nav_store:
+//                fragment = HomeFragment.newInstance(itemId);
+//                break;
 
             case R.id.nav_group:
-                fragment = HomeFragment.newInstance(itemId);
+                fragment = GroupFragment.newInstance(itemId);
                 // showTaost();
                 break;
 
