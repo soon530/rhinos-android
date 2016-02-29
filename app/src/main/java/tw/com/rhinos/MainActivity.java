@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, getFragment(R.id.nav_point)).commit();
+                .replace(R.id.container, getFragment(R.id.nav_message)).commit();
     }
 
     @Override
@@ -96,6 +96,10 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment;
 
         switch (itemId) {
+            case R.id.nav_message:
+                fragment = NewsFragment.newInstance(itemId);
+                break;
+
             case R.id.nav_point:
                 fragment = PointFragment.newInstance(itemId);
                 break;
