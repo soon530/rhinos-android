@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_find:
-                fragment = HomeFragment.newInstance(itemId);
+                fragment = FindFragment.newInstance(itemId);
                 // showTaost();
                 break;
 
