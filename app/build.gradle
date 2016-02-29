@@ -8,8 +8,8 @@ android {
         applicationId "tw.com.rhinos"
         minSdkVersion 18
         targetSdkVersion 23
-        versionCode 1
-        versionName "rhinos-0.0.1"
+        versionCode 3
+        versionName "rhinos-0.0.3"
     }
     buildTypes {
         release {
