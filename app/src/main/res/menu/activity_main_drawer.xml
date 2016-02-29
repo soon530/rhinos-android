@@ -29,7 +29,7 @@
         <item
             android:id="@+id/nav_card"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="球員Angle卡" />
+            android:title="球員、Rhinos Angle卡" />
 
         <item
             android:id="@+id/nav_find"

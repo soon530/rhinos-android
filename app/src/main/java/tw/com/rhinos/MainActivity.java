@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_card:
-                fragment = HomeFragment.newInstance(itemId);
+                fragment = CardFragment.newInstance(itemId);
                 // showTaost();
                 break;
 
